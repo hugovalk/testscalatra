@@ -9,7 +9,7 @@ object TestScalatraBuild extends Build {
   val Organization = "nl.ibridge"
   val Name = "Test Scalatra"
   val Version = "0.1.0-SNAPSHOT"
-  val ScalaVersion = "2.11.4"
+  val ScalaVersion = "2.11.5"
   val ScalatraVersion = "2.3.0"
 
   lazy val project = Project (
