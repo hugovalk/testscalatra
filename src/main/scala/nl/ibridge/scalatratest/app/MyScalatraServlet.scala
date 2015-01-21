@@ -7,13 +7,19 @@ import nl.ibridge.scalatratest.model.Result
 
 class MyScalatraServlet extends TestScalatraStack with JsonSupport {
   
-  get("/") {
-    Result(Result.all)
+  get("/data") {
+    val data = Result.all
+    Result(params.get("functie") match {
+      case Some(f) => data.filter { d => d.key == "functie" && d.value.toLowerCase().contains(f) }
+      case None => data
+    })
   }
   
-  post("/get") {
-    
+  get("/data/:id") {
+    Result.all.find { _.id.toString() == params("id") }
   }
 }
+
+
 
 
