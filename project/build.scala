@@ -4,6 +4,8 @@ import org.scalatra.sbt._
 import org.scalatra.sbt.PluginKeys._
 import com.mojolly.scalate.ScalatePlugin._
 import ScalateKeys._
+import com.typesafe.sbteclipse.plugin.EclipsePlugin._
+import EclipseKeys._
 
 object TestScalatraBuild extends Build {
   val Organization = "nl.ibridge"
@@ -21,6 +23,7 @@ object TestScalatraBuild extends Build {
       version := Version,
       scalaVersion := ScalaVersion,
       resolvers += Classpaths.typesafeReleases,
+      EclipseKeys.withSource := true,
       libraryDependencies ++= Seq(
         "org.scalatra" %% "scalatra" % ScalatraVersion,
         "org.scalatra" %% "scalatra-scalate" % ScalatraVersion,
