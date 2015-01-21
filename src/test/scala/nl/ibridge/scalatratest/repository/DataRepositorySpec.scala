@@ -19,11 +19,11 @@ class DataRepositorySpec extends FlatSpec with Matchers with BeforeAndAfterAll {
       
   }
   
-//  it should "be able to index a Data object" in {
-//      val data = new Data(1, "functie", "tester")
-//      val res = repo.saveOrUpdate(data)
-//      Await.result(res, Duration("10 s")) should be(true)
-//  }
+  it should "be able to index a Data object" in {
+      val data = new Data(1, "functie", "tester")
+      val res = repo.saveOrUpdate(data)
+      Await.result(res, Duration("10 s")) should be(true)
+  }
   
   it should "be able to delete the data index" in {
       val res = repo.deleteIndex()

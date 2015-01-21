@@ -30,6 +30,8 @@ object TestScalatraBuild extends Build {
         "org.scalatra" %% "scalatra-specs2" % ScalatraVersion % "test",
         "org.scalatra" %% "scalatra-scalatest" % ScalatraVersion % "test",
         "org.scalatra" %% "scalatra-json" % ScalatraVersion,
+        "com.fasterxml.jackson.core" % "jackson-databind" % "2.4.2",
+        "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.4.2",
         "org.json4s"   %% "json4s-jackson" % "3.2.11",
         "org.json4s"   %% "json4s-native" % "3.2.11",
         "org.slf4j" % "slf4j-api" % "1.7.6",
