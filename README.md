@@ -17,3 +17,10 @@ Then enter
 ```
 
 Now SBT will monitor code changes and restart the application automatically.
+
+To create Eclipse project files, enter:
+```
+> eclipse
+```
+This will generate the .project and .classpath files. Now you can import the project as existing project 
+into your Eclipse workspace. 
