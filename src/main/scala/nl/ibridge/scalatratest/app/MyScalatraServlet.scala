@@ -16,7 +16,7 @@ class MyScalatraServlet extends TestScalatraStack with JsonSupport {
   }
   
   get("/data/:id") {
-    Result.all.find { _.id.toString() == params("id") }
+    Result.all.find { _.id.toString() == params("id") }.getOrElse(List())
   }
 }
 
