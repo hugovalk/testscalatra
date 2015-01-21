@@ -34,6 +34,6 @@ trait DataRepository {
   
   def saveOrUpdate(data: Data): Future[Boolean] = client.execute {
     index into "data" doc data
-  }.map { _.isCreated() }
+  }.map(_.isCreated())
   
 }
