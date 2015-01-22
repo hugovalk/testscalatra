@@ -37,7 +37,7 @@ object TestScalatraBuild extends Build {
         "org.slf4j" % "slf4j-api" % "1.7.6",
         "com.sksamuel.elastic4s" %% "elastic4s" % "1.4.10",        
         "ch.qos.logback" % "logback-classic" % "1.1.2" % "runtime",
-        "org.eclipse.jetty" % "jetty-webapp" % "9.1.5.v20140505" % "container",
+        "org.eclipse.jetty" % "jetty-webapp" % "9.1.5.v20140505" % "compile;container",
         "org.eclipse.jetty" % "jetty-plus" % "9.1.5.v20140505" % "container",
         "javax.servlet" % "javax.servlet-api" % "3.1.0"
       ),
